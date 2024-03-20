@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import george from "./assets/images/george.jpg";
 
 function App() {
+  const randomImageUrl = "https://picsum.photos/400/265";
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Task: add three images with some styling.</h1>
+      <img height={400} src={george} alt="George Costanza" />
+      <img
+        height={400}
+        src={require("./assets/images/JohnMoney.jpg")}
+        alt="Ah NSS Days"
+      />
+      <img src={randomImageUrl} height={400} alt="Steady as she goes" />
     </div>
   );
 }
